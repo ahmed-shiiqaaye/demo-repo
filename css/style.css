@@ -62,3 +62,17 @@ button.active{
 .container .content .tab-content.show{
     display: initial;
 }
+
+@media(min-width:600px){
+    .container{
+        width: 700px;;
+        min-height: 250px;
+        background-color: #eee;
+        margin: 20px auto;
+        margin-top: 10%;
+        transform: translateY(-10%);
+        display: grid;
+        grid-template-columns: 1fr 4fr;
+        position: relative;
+    }
+}
