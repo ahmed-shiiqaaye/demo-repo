@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: blueviolet;
+}
+.container{
+    max-width: 80%;
+    min-height: 250px;
+    background-color: #eee;
+    margin: 20px auto;
+    margin-top: 50%;
+    transform: translateY(-50%);
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    position: relative;
+}
+.container .tabs{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    border-right: 1px solid rgb(146, 133, 130);
+}
+.container .tabs button{
+    padding: 12px 4px;
+    border: none;
+    outline: none;
+    height: 25%;
+    border-bottom: 1px solid rgb(146, 133, 130);
+    transition: all .3s ease-in-out;
+
+}
+.container .content .tab-content{
+    transition: all .3s ease-in-out;
+}
+.container .content{
+    padding: 10px;
+    background-color: #eed;
+     height: 100%; 
+    box-sizing: border-box;
+}
+.container .tab-content h2{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    border-bottom: 1px solid #101010;
+    padding: 5px 0;
+    margin-bottom: 8px;
+}
+.container .content .tab-content p{
+    letter-spacing: .5px;
+    word-spacing: .5px;
+}
+button.active{
+    background-color: #101010;
+    color: #eee;
+}
+/* --------------- */
+.container .content div{
+    display: none;
+}
+.container .content .tab-content.show{
+    display: initial;
+}
